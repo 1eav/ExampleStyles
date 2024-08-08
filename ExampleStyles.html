@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExampleStyles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Примеры Веб-разработки</h1>
+        <button class="button" id="button1">Пример 1: Нажать на кнопку</button>
+        <button class="button" id="button2">Пример 2: Валидация формы</button>
+        <button class="button" id="button3">Пример 3: Манипуляция с DOM</button>
+        <button class="button" id="button4">Пример 4: Обработчик событий</button>
+        <button class="button" id="button5">Пример 5: Работа с Local Store</button>
+        <div id="example1" style="display: none;">
+            <h2>Пример 1: Нажать на кнопку</h2>
+            <p>Нажмите на кнопку, чтобы увидеть уведомление.</p>
+            <button class="button" id="showAlertButton">Показать уведомление</button>
+        </div>
+        <div id="example2" style="display: none;">
+            <h2>Пример 2: Валидация формы</h2>
+            <p>Заполните форму ниже и нажмите "отправить", чтобы увидеть валидацию</p>
+            <form id="example2Form">
+                <div class="form-group">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+        <div id="example3" style="display: none;">
+            <h2>Пример 3: Манипуляция с DOM</h2>
+            <p>Нажмите кнопку ниже, чтобы изменить текст.</p>
+            <button class="button" id="changeTextButton">Изменить текст</button>
+            <p id="textToChange">Этот текст изменится.</p>
+        </div>
+        <div id="example4" style="display: none;">
+            <h2>Пример 4: Обработчик событий</h2>
+            <p>Нажмите кнопку ниже, чтобы добавить обработчик.</p>
+            <button class="button" id="addClickListenerButton">Добавить обработчик событий</button>
+            <p id="listenerStatus">Статус обработчика событий: Отключен</p>
+        </div>
+        <div id="example5" style="display: none;">
+            <h2>Пример 5: Работа с Local Store</h2>
+            <p>Введите ваше имя ниже, и нажмите "Сохранить имя".</p>
+            <input type="text" id="localStorageName" placeholder="Введите ваше имя">
+            <button class="button" id="saveNameButton">Сохранить имя</button>
+            <p id="localStorageStatus">Имя в локальном хранилище: Нет</p>
+        </div>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
